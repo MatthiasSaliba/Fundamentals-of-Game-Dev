@@ -1,4 +1,6 @@
-#include<iostream>
+#include <iostream>
+#include <string>
+using namespace std;
  
 int main() {
     // 0 is unexplored, 1 is player, 2 is treasure
@@ -14,15 +16,26 @@ int main() {
     for(int i = 0; i < 5; i++) {
         for(int j = 0; j < 5; j++) {
             if(board[i][j] == 1) {
-                std::cout << "P ";  // P for player
+                cout << "P ";  // P for player
             } else if(board[i][j] == 0) {
-                std::cout << "- ";  // - for unexplored
+                cout << "- ";  // - for unexplored
             } else if(board[i][j] == 2) {
-                std::cout << "T ";  // T for treasure (this could be hidden in the real game)
+                cout << "T ";  // T for treasure (this could be hidden in the real game)
             }
         }
-        std::cout << std::endl;
+        cout << endl;
     }
+    string playerMovement;
+
+    cout << "Where do you want to move ? WASD" << endl;
+    cin >> playerMovement;
+
+    if (playerMovement == 'W') {
+
+    } else if (playerMovement == 'A') {
+
+    } else if ()
+
  
     return 0;
 }
